@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ryder: Book your ride</title>
     <script src="https://kit.fontawesome.com/c18c04d122.js" crossorigin="anonymous"></script>
+    <link rel = "stylesheet" href = "style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -13,14 +17,14 @@
             <h1 class = "header-logo-text">Ryder</h1>
         </div>
         <nav class = "navbar">
-            <ul class = "header-list-left">
+            <ul class = "header-list header-list-left">
                 <li class = "header-links">About</li>
                 <li class = "header-links">Safety</li>
                 <li class = "header-links">Help</li>
             </ul>
-            <ul class = "header-list-right">
+            <ul class = "header-list header-list-right">
                 <li class = "header-links lang">EN</li>
-                <li class = "header-links"><button class = "log-in-button"><i class="fa fa-user"></i></button></li>
+                <li class = "header-links"><button class = "log-in-button"><i class="fa fa-user"></i> Log in</button></li>
                 <li class = "header-links"><button class = "sign-up-button">Sign Up</i></button></li>
             </ul>
         </nav>
@@ -31,30 +35,32 @@
                 <h1 class = "hero-header">Select your ride</h1>
                 <input class = "pickup" placeholder="Enter pickup location">
                 <input class = "destination" placeholder="Enter destination">
-                <button class = "request-button">Request now</button>
-                <button class = "request-button">Schedule for later</button>
+                <div class = "button-container">
+                    <button class = "request-button">Request now</button>
+                    <button class = "schedule-button">Schedule for later</button>
+                </div>
             </div>
         </div>
         <div class = "feature-container">
-            <div class = "reliable">
-                <div class = "reliable-icon"><i class="fa fa-clock"></i></div>
-                <h3 class = "reliable-header">Fast & Reliable</h3>
-                <p class = "reliable-text">Taxis arrive and drop you off at your destination on time</p>
+            <div class = "reliable feature-item">
+                <div class = "feature-icon"><i class="fa fa-clock"></i></div>
+                <h3 class = "feature-header">Fast & Reliable</h3>
+                <p class = "feature-text">Taxis arrive and drop you off at your destination on time</p>
             </div>
-            <div class = "pricing">
-                <div class = "reliable-icon"><i class="fa fa-dollar"></i></div>
-                <h3 class = "pricing-header">Affordable Price</h3>
-                <p class = "pricing-text">Rides are affordable enabling easy commute to everyone</p>
+            <div class = "pricing feature-item">
+                <div class = "feature-icon"><i class="fa fa-coins"></i></div>
+                <h3 class = "feature-header">Affordable Price</h3>
+                <p class = "feature-text">Rides are affordable enabling easy commute to everyone</p>
             </div>
-            <div class = "safety">
-                <div class = "reliable-icon"><i class="fa fa-shield"></i></div>
-                <h3 class = "safety-header">Safe</h3>
-                <p class = "safety-text">Drivers are screened and trained to ensure your safety</p>
+            <div class = "safety feature-item">
+                <div class = "feature-icon"><i class="fa fa-shield"></i></div>
+                <h3 class = "feature-header">Safe</h3>
+                <p class = "feature-text">Drivers are screened and trained to ensure your safety</p>
             </div>
         </div>
         <div class = "about">
             <div class = "about-left">
-                <img src = "images/apple-iphone-12-pro-medium.png" alt = "Oishi on iPhone" class = "iphone">
+                <img src = "images/iphoneSS.png" alt = "Oishi on iPhone" class = "iphone">
             </div>
             <div class = "about-right">
                 <h3 class = "about-header">Ride with Ryder</h3>
@@ -64,7 +70,6 @@
         </div>
         <div class = "mobile-app">
             <div class = "mobile-left">
-                <h3 class = "mobile-app-1">Download Ryder App</h3>
                 <h4 class = "mobile-app-2">Get realtime updates of your ride and exciting bonus when you sign up on the mobile app.</h4>
             </div>
             <div class = "mobile-right">
@@ -78,38 +83,40 @@
             <h3 class = "footer-logo">Ryder</h3>
         </div>
         <div class = "footer-right">
-            <div class = "footer-element">
-                <h3 class = "footer-head">Company</h3>
-                <div class = "footer-container">
-                    <h4 class = "footer-item">Services</h4>
-                    <h4 class = "footer-item">Newsroom</h4>
-                    <h4 class = "footer-item">Investors</h4>
-                    <h4 class = "footer-item">Blog</h4>
-                    <h4 class = "footer-item">Career</h4>
+            <div class = "footer-lists">
+                <div class = "footer-element">
+                    <h3 class = "footer-head">Company</h3>
+                    <div class = "footer-container">
+                        <h4 class = "footer-item">Services</h4>
+                        <h4 class = "footer-item">Newsroom</h4>
+                        <h4 class = "footer-item">Investors</h4>
+                        <h4 class = "footer-item">Blog</h4>
+                        <h4 class = "footer-item">Career</h4>
+                    </div>
                 </div>
-            </div>
-            <div class = "footer-element">
-                <h3 class = "footer-head">Safety</h3>
-                <div class = "footer-container">
-                    <h4 class = "footer-item">COVID - 19</h4>
-                    <h4 class = "footer-item">Protocols</h4>
-                    <h4 class = "footer-item">Drivers</h4>
-                    <h4 class = "footer-item">Environment</h4>
-                    <h4 class = "footer-item">Security</h4>
+                <div class = "footer-element">
+                    <h3 class = "footer-head">Safety</h3>
+                    <div class = "footer-container">
+                        <h4 class = "footer-item">COVID - 19</h4>
+                        <h4 class = "footer-item">Protocols</h4>
+                        <h4 class = "footer-item">Drivers</h4>
+                        <h4 class = "footer-item">Environment</h4>
+                        <h4 class = "footer-item">Security</h4>
+                    </div>
                 </div>
-            </div>
-            <div class = "footer-element">
-                <h3 class = "footer-head">Doing Business</h3>
-                <div class = "footer-container">
-                    <h4 class = "footer-item">Become a Driver</h4>
-                    <h4 class = "footer-item">Get Ryder for Workplace</h4>
-                    <h4 class = "footer-item">Work with Us</h4>
+                <div class = "footer-element">
+                    <h3 class = "footer-head">Doing Business</h3>
+                    <div class = "footer-container">
+                        <h4 class = "footer-item">Become a Driver</h4>
+                        <h4 class = "footer-item">Get Ryder for Workplace</h4>
+                        <h4 class = "footer-item">Work with Us</h4>
+                    </div>
                 </div>
-            </div>
-            <div class = "footer-element">
-                <h3 class = "footer-head">OUR OFFICE</h3>
-                <div class = "footer-container">
-                    <h4 class = "footer-item">2040 Addison St, Berkeley, CA 94704, United States</h4>
+                <div class = "footer-element">
+                    <h3 class = "footer-head">Our Office</h3>
+                    <div class = "footer-container">
+                        <h4 class = "footer-item">2040 Addison St, Berkeley, CA 94704, United States</h4>
+                    </div>
                 </div>
             </div>
             <div class = "footer-links">
@@ -117,17 +124,17 @@
                 <i class="fab fa-twitter"></i>
                 <i class="fab fa-linkedin"></i>
                 <i class="fab fa-youtube"></i>
+                <div class = "footer-location">
+                    <i class = "fa fa-map"></i>
+                    <div class = "location-text">Kolkata</div>
+                </div>
             </div>
-            <div class = "footer-location">
-                <i class = "fa fa-map"></i>
-                <div class = "location-text">Kolkata</div>
             </div>
-        </div>
         <div class = "footer-bottom">
             <div class = "copyright">
                 © 2022 Ryder Technologies Inc.
             </div>
-            <ul class = "footer-right">
+            <ul class = "footer-right-container">
                 <li class = "footer-right-item">Privacy</li>
                 <li class = "footer-right-item">Accessibility</li>
                 <li class = "footer-right-item">Terms</li>
